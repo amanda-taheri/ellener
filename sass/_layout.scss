@@ -1,50 +1,56 @@
 .header {
-	position: relative;
-	text-align: center;
-	background-image: linear-gradient(to right bottom, rgba(2, 2, 2, 0.5) 0%, rgb(92, 91, 99) 100%), url(../img/header.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover; 
-	color:white;
-	border-radius: 1rem;
-	border-end-end-radius: 0;
-	background-position-x: center;
-	
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(2, 2, 2, 0.5) 0%,
+      rgba(7, 7, 7, 0.5) 100%
+    ),
+    url(../img/1561424.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 1rem;
+  border-end-end-radius: 0;
+  background-position-x: center;
+  background-position-y: 40%;
+;
+  &__logo {
+    &--box {
+      display: flex;
+      position: absolute;
+      width: 12rem;
+      height: 12rem;
+      left: 1%;
+      right: 1%;
+      color: #fff;
+    }
+  }
 
-	&__logo{
-
-		&--box{
-			display: flex;
-			position: absolute;
-			width: 20rem;
-			height: 20rem;
-			left: 1%;
-			top: 0%;
-			color: #fff;
-		}
+  &__title {
+    position: relative;
+	flex: 0 0 50%;
+	&--box{
+		height: 75vh;
+    	width: 100%;
+    	margin: 0;
+    	padding: 0;
 	}
-
-	&__title{
-		height:60vh;
-		width:100%;
-		margin: 0;
-		padding: 0;	
-	}
+  }
 }
 
-.flex { /*Flexbox for containers*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	flex-direction: column;
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .waves {
-	position:relative;
-	width: 100%;
-	height:15vh;
-	margin-bottom:-7px; 
-	min-height:100px;
-	max-height:150px;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
 }
-

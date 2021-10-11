@@ -60,6 +60,16 @@ body {
   animation-delay: -5s;
   animation-duration: 20s; }
 
+@keyframes btn {
+  0% {
+    opacity: 0;
+    transform: translatey(-20rem); }
+  80% {
+    transform: translatey(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translatey(0); } }
+
 .btn {
   position: relative;
   background-color: #fff;
@@ -69,12 +79,13 @@ body {
     cursor: pointer;
     border: none;
     display: inline-block;
-    padding: 1rem 4rem;
+    padding: .9rem 3.5rem;
     font-size: 1.8rem;
-    border-radius: 100rem;
+    border-radius: 2rem;
     text-transform: uppercase;
     text-decoration: none;
-    z-index: 2; }
+    z-index: 2;
+    transition: all .2s; }
   .btn:hover {
     box-shadow: 0 5px 20px black;
     transform: translatey(-3px); }
@@ -83,7 +94,7 @@ body {
     width: 100%;
     display: inline-block;
     position: absolute;
-    border-radius: 100rem;
+    border-radius: 2rem;
     height: 100%;
     background-color: #fff;
     top: 0;
@@ -91,40 +102,55 @@ body {
     z-index: -1;
     transition: all 0.5s; }
   .btn:hover::after {
-    transform: scale(1.4);
+    transform: scale(1.2);
     opacity: 0; }
+
+.btn--box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 1rem;
+  right: 10rem; }
+  .btn--box .btn1 {
+    animation: btn 2s ease-in-out; }
+  .btn--box .btn2 {
+    animation: btn 2s .2s ease-in-out; }
+  .btn--box .btn3 {
+    animation: btn 2s .4s ease-in-out; }
 
 .header {
   position: relative;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(2, 2, 2, 0.5) 0%, #5c5b63 100%), url(../img/header.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(2, 2, 2, 0.5) 0%, rgba(7, 7, 7, 0.5) 100%), url(../img/1561424.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   border-radius: 1rem;
   border-end-end-radius: 0;
-  background-position-x: center; }
+  background-position-x: center;
+  background-position-y: 40%; }
   .header__logo--box {
     display: flex;
     position: absolute;
-    width: 20rem;
-    height: 20rem;
+    width: 12rem;
+    height: 12rem;
     left: 1%;
-    top: 0%;
+    right: 1%;
     color: #fff; }
   .header__title {
-    height: 60vh;
-    width: 100%;
-    margin: 0;
-    padding: 0; }
+    position: relative;
+    flex: 0 0 50%; }
+    .header__title--box {
+      height: 75vh;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
 
 .flex {
   /*Flexbox for containers*/
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column; }
+  justify-content: space-around;
+  align-items: center; }
 
 .waves {
   position: relative;
@@ -164,21 +190,29 @@ body {
 
 .title {
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 10rem;
-  animation: htitle 2s ease-in-out; }
+  font-size: 11rem;
+  animation: htitle 2s ease-in-out;
+  position: absolute;
+  top: -9.7rem;
+  left: 1rem; }
 
 .desc {
   font-family: inherit;
   display: block;
-  letter-spacing: 2rem;
-  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-size: 2.5rem;
   font-weight: 500;
   word-spacing: 2rem;
   text-transform: uppercase;
-  animation: hdesc 2s ease-in-out; }
+  animation: hdesc 2s ease-in-out;
+  position: absolute;
+  top: 4rem;
+  left: 7rem;
+  width: 50%;
+  text-align: end; }
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
