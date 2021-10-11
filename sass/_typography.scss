@@ -41,3 +41,24 @@
 	  url("/fonts/IRANSansWeb.woff") format("woff"),
 	  url("/fonts/IRANSansWeb.ttf") format("truetype");
 }
+
+
+.title {
+	font-family: inherit;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10rem;
+	animation: htitle 2s ease-in-out;
+}
+
+.desc {
+	font-family: inherit;
+	display: block;
+	letter-spacing: 2rem;
+	font-size: 2rem;
+	font-weight: 500;
+	word-spacing: 2rem;
+	text-transform: uppercase;
+	animation: hdesc 2s ease-in-out;
+}

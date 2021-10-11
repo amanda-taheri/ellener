@@ -1,0 +1,191 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "IRANSans";
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  direction: rtl;
+  padding: 4rem; }
+
+/* Animation */
+@keyframes htitle {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  80% {
+    transform: translatex(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translatex(0); } }
+
+@keyframes hdesc {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  80% {
+    transform: translatex(-0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translatex(0); } }
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0); }
+  100% {
+    transform: translate3d(85px, 0, 0); } }
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; }
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s; }
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s; }
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s; }
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s; }
+
+.btn {
+  position: relative;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 2rem; }
+  .btn:link, .btn:visited {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    border-radius: 100rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 2; }
+  .btn:hover {
+    box-shadow: 0 5px 20px black;
+    transform: translatey(-3px); }
+  .btn::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: 100rem;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s; }
+  .btn:hover::after {
+    transform: scale(1.4);
+    opacity: 0; }
+
+.header {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(2, 2, 2, 0.5) 0%, #5c5b63 100%), url(../img/header.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 1rem;
+  border-end-end-radius: 0;
+  background-position-x: center; }
+  .header__logo--box {
+    display: flex;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    left: 1%;
+    top: 0%;
+    color: #fff; }
+  .header__title {
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px; }
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts");
+  src: url("/fonts/IRANSansWeb-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/IRANSansWeb-Bold.woff2") format("woff2"), url("/fonts/IRANSans-Bold-web.woff") format("woff"), url("/fonts/IRANSansWeb-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/IRANSans-Medium.eot");
+  src: url("/fonts/IRANSans-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/IRANSans-Medium.woff2") format("woff2"), url("/fonts/IRANSans-Medium.woff") format("woff"), url("/fonts/IRANSans-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/IRANSansWeb-Light.eot");
+  src: url("/fonts/IRANSansWeb-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/IRANSansWeb-Light.woff2") format("woff2"), url("/fonts/IRANSansWeb-Light.woff") format("woff"), url("/fonts/IRANSansWeb-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/IRANSansWeb.eot");
+  src: url("/fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("/fonts/IRANSansWeb.woff2") format("woff2"), url("/fonts/IRANSansWeb.woff") format("woff"), url("/fonts/IRANSansWeb.ttf") format("truetype"); }
+
+.title {
+  font-family: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10rem;
+  animation: htitle 2s ease-in-out; }
+
+.desc {
+  font-family: inherit;
+  display: block;
+  letter-spacing: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  word-spacing: 2rem;
+  text-transform: uppercase;
+  animation: hdesc 2s ease-in-out; }
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px; }
+  .content {
+    height: 30vh; }
+  title {
+    font-size: 24px; } }
