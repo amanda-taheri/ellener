@@ -761,7 +761,8 @@ label {
     .attach__tigger--icon {
       width: 2rem;
       height: 2rem;
-      fill: #1c063f; }
+      fill: #1c063f;
+      margin-left: 5px; }
   .attach__file {
     padding-top: 2rem;
     display: none; }
