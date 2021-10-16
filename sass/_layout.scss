@@ -65,7 +65,7 @@
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 45rem;
+  height: 37rem;
   padding-top: 3rem;
   position: relative;
   display: flex;
@@ -74,7 +74,7 @@
   &__logo {
     width: 10rem;
     position: absolute;
-    top: 27rem;
+    top: 22rem;
   }
   &__logo {
     width: 18rem;
@@ -194,7 +194,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 34.45rem;
+  top: 29.45rem;
   left: 70rem;
   transform: rotate(-10deg);
 }
@@ -203,7 +203,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 32.8rem;
+  top: 27.8rem;
   left: 89.8rem;
 }
 .left-buttom {
@@ -211,106 +211,135 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 34.8rem;
+  top: 29.8rem;
   left: 38.1rem;
   transform: rotate(10deg);
 }
-.left-buttom-horz{
+.left-buttom-horz {
   width: 10rem;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 33.12rem;
+  top: 28.12rem;
   left: 28.27rem;
 }
-.left-middle{
+.left-middle {
   width: 20rem;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 26.2rem;
+  top: 21.2rem;
   left: 42.2rem;
   transform: rotate(40deg);
 }
-.left-middle-horz{
+.left-middle-horz {
   width: 10rem;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 19.80rem;
+  top: 14.8rem;
   left: 34.55rem;
 }
-.right-middle{
+.right-middle {
   width: 20rem;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 26.2rem;
+  top: 21.2rem;
   right: 42.2rem;
   transform: rotate(-40deg);
 }
-.right-middle-horz{
+.right-middle-horz {
   width: 10rem;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 19.80rem;
+  top:14.8rem;
   right: 34.56rem;
 }
-.center{
+.center {
   width: 20rem;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 20.5rem;
+  top: 15.5rem;
   right: 54.2rem;
   transform: rotate(90deg);
 }
-.center-horz{
-   width: 10rem;
+.center-horz {
+  width: 10rem;
   height: 2px;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 10.4rem;
+  top: 5.4rem;
   right: 59rem;
-  
-  
 }
-.footerBtn{
- &:link, &:visited{
+.footerBtn {
+  &:link,
+  &:visited {
     font-size: 1.6rem;
-  color: #fff;
-  text-decoration: none;
-  font-family: inherit;
-  transition: all .2s;
- }
- &:hover{
-   color: rgb(233, 21, 21);
-   
- }
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  &:hover {
+    color: rgb(233, 21, 21);
+  }
 }
-.btn-right-buttom{
- position: absolute;
-  top: 29.23rem;
-  left: 90rem; 
-}
-.btn-left-buttom{
+.btn-right-buttom {
   position: absolute;
-  top: 29.6rem;
+  top: 24.23rem;
+  left: 90rem;
+}
+.btn-left-buttom {
+  position: absolute;
+  top: 24.6rem;
   left: 28.27rem;
 }
-.btn-left-middle{
+.btn-left-middle {
   position: absolute;
-  top: 16.2rem;
+  top: 11.2rem;
   left: 34.6rem;
 }
-.btn-right-middle{
+.btn-right-middle {
   position: absolute;
-  top: 16.2rem;
+  top: 11.2rem;
   right: 34.6rem;
 }
-.btn-center{
-   position: absolute;
-  top: 6.9rem;
+.btn-center {
+  position: absolute;
+  top: 1.9rem;
   right: 59rem;
+}
+.order__header {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(2, 2, 2, 0.5) 0%,
+      rgba(7, 7, 7, 0.5) 100%
+    ),
+    url(../img/order.jpg);
+  background-position-y: 90%;
+  background-size: cover;
+  &--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(-1rem);
+  }
+  &--text {
+    font-size: 8rem;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    font-weight: 500;
+  }
+  &__logo {
+    width: 12rem;
+    position: relative;
+    right: -1rem;
+    top: 0rem;
+  }
 }
