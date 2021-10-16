@@ -427,7 +427,7 @@ body {
   text-align: end; }
 
 .section__shop {
-  padding: 25rem 0;
+  padding: 35rem 0 8rem 0;
   margin-top: -15rem;
   width: 100%;
   display: grid; }
@@ -778,10 +778,11 @@ label {
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
   .feature__container {
-    grid-column: center-start / center-end;
-    margin: 8rem 0;
+    grid-column: full-start / center-end;
+    margin: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 6rem;
     align-items: start; }
   .feature__icon {
@@ -790,8 +791,15 @@ label {
     height: 4.5rem;
     grid-row: 1 / span 2;
     transform: translateY(-1rem); }
+  .feature__title {
+    font-size: 2rem; }
   .feature__text {
     font-size: 1.7rem; }
+
+.container {
+  direction: ltr;
+  display: grid;
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
