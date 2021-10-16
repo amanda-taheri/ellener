@@ -59,7 +59,7 @@
 
 .footer {
   position: relative;
-  background-color: rgb(32, 32, 32);
+  background-color: #111;
   box-shadow: 0rem -0.5rem 2rem rgba(0, 0, 0, 0.2);
   color: #fff;
   text-align: center;
@@ -74,7 +74,7 @@
   &__logo {
     width: 10rem;
     position: absolute;
-    top: 23rem;
+    top: 27rem;
   }
   &__logo {
     width: 18rem;
@@ -194,7 +194,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 30.45rem;
+  top: 34.45rem;
   left: 70rem;
   transform: rotate(-10deg);
 }
@@ -203,7 +203,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 28.8rem;
+  top: 32.8rem;
   left: 89.8rem;
 }
 .left-buttom {
@@ -211,7 +211,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 30.8rem;
+  top: 34.8rem;
   left: 38.1rem;
   transform: rotate(10deg);
 }
@@ -220,7 +220,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 29.12rem;
+  top: 33.12rem;
   left: 28.27rem;
 }
 .left-middle{
@@ -228,7 +228,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 22.2rem;
+  top: 26.2rem;
   left: 42.2rem;
   transform: rotate(40deg);
 }
@@ -237,7 +237,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 15.80rem;
+  top: 19.80rem;
   left: 34.55rem;
 }
 .right-middle{
@@ -245,7 +245,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 22.2rem;
+  top: 26.2rem;
   right: 42.2rem;
   transform: rotate(-40deg);
 }
@@ -254,7 +254,7 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 15.80rem;
+  top: 19.80rem;
   right: 34.56rem;
 }
 .center{
@@ -262,16 +262,55 @@
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: 16.5rem;
+  top: 20.5rem;
   right: 54.2rem;
   transform: rotate(90deg);
 }
 .center-horz{
    width: 10rem;
   height: 2px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 6.4rem;
+  top: 10.4rem;
   right: 59rem;
   
+  
+}
+.footerBtn{
+ &:link, &:visited{
+    font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
+  transition: all .2s;
+ }
+ &:hover{
+   color: rgb(233, 21, 21);
+   
+ }
+}
+.btn-right-buttom{
+ position: absolute;
+  top: 29.23rem;
+  left: 90rem; 
+}
+.btn-left-buttom{
+  position: absolute;
+  top: 29.6rem;
+  left: 28.27rem;
+}
+.btn-left-middle{
+  position: absolute;
+  top: 16.2rem;
+  left: 34.6rem;
+}
+.btn-right-middle{
+  position: absolute;
+  top: 16.2rem;
+  right: 34.6rem;
+}
+.btn-center{
+   position: absolute;
+  top: 6.9rem;
+  right: 59rem;
 }
