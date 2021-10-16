@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="Ellener|idustrial parts seller">
+	<title>Order Now</title>
+</head>
+<body>
+	<!------------------------- order ------------------------->
+	<section class="order">
+		<div class="order__title">
+		    <h2 class="order__title--h">Order</h2>
+		</div>
+		<div class="order__title">
+		    <p class="order__title--p">Ellener , industrial parts seller</p>
+		</div>
+		<div class="order__form--container">
+		    <form action="#" class="order__form">
+			<div class="field--double">
+			    <div class="field">
+				<input type="text" name="fullName" class="form__input input-check" id="fUllName" placeholder=" ">
+				<span class="form__tooltip">enter you full name</span>
+				<label class="form__label" for="fullName">Full Name</label>
+			    </div>
+			    <div class="field">
+				<input type="text" name="companyName" class="form__input input-check" id="companyName" placeholder=" ">
+				<span class="form__tooltip">enter you company name</span>
+				<label class="form__label" for="companyName">Company Name</label>
+	
+			    </div>
+			</div>
+			<div class="field--double">
+			    <div class="field">
+				<input type="email" name="email" class="form__input input-check" id="email" placeholder=" " pattern='\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'>
+				<span class="form__tooltip">enter you email address</span>
+				<label class="form__label" for="email">Email</label>
+			    </div>
+	
+			    <div class="field">
+				<input type="tel" name="phone" class="form__input input-check" id="phone" maxlength="11" placeholder=" " pattern='09(1[0-9]|3[1-9]|2[1-9]|9[0-9])-?[0-9]{3}-?[0-9]{4}'>
+				<span class="form__tooltip">enter your phone number</span>
+				<label class="form__label" for="phone">Phone Number</label>
+			    </div>
+			</div>
+			<div class="field--double">
+			    <div class="field">
+				<input type="text" name="make" class="form__input input-check" id="make" placeholder=" ">
+				<span class="form__tooltip">enter manufacturer of your order</span>
+				<label class="form__label" for="make">Make/Manufacturer</label>
+			    </div>
+	
+			    <div class="field">
+				<input type="text" name="serial" class="form__input input-check" id="serial" placeholder=" ">
+				<span class="form__tooltip">enter serial number of your order</span>
+				<label class="form__label" for="model">Serial Number</label>
+			</div>
+			</div>
+			
+			<div class="field">
+				<div class="field">
+					<input type="text" name="model" class="form__input input-check" id="model" placeholder=" ">
+					<span class="form__tooltip">enter model of your order</span>
+					<label class="form__label" for="model">Model/Type</label>
+				</div>
+			</div>
+	
+			<div class="field">
+			    <textarea name="pDescription" class="form__input input-check" id="pDescription" rows="4" placeholder=" "></textarea>
+			    <span class="form__tooltip">Enter your order's description</span>
+			    <label class="form__label" for="pDescription">Order Description</label>
+	
+			</div>
+			<div class="form__attach">
+			    <button class="attach__tigger">
+						<svg class="attach__tigger--icon">
+							<use xlink:href="./img/symbol-defs.svg#icon-attachment"></use>
+						</svg>
+						<div class="attach__tigger--text">Attach file</div>
+					</button>
+	
+			    <input type="file" multiple class="attach__file file" />
+			</div>
+			<div class="attach__description"> Up to 5 attachments. File must be less than 5 MB </div>
+			<div class="form__submit">
+			    <button type="submit" class="form--submit">submit</button>
+	
+			    <div class="form__cookies">
+				<p class="form__cookie--text"> By submitting this form I give my consent for Ellener to process my personal data pursuant to  <span class="order__span"> Ellener Privacy and Cookies Policy.
+				</span></p>
+			    </div>
+			</div>
+	
+		    </form>
+		</div>
+	</section>
+	<!------------------------- /order ------------------------->
+
+	<script src="../main.js"></script>
+</body>
+</html>
