@@ -29,13 +29,13 @@
 
   &__title {
     position: relative;
-	flex: 0 0 50%;
-	&--box{
-		height: 75vh;
-    	width: 100%;
-    	margin: 0;
-    	padding: 0;
-	}
+    flex: 0 0 50%;
+    &--box {
+      height: 75vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
@@ -55,34 +55,31 @@
   max-height: 150px;
 }
 
-
 ////////////////////////////////////////////////////
 
-.footer{
+.footer {
   position: relative;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(#000000, 0.5) 0%,
-    rgba(#434343, 1) 100%),
-    url(../img/footer5.png);
-
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0rem -0.5rem 2rem rgba(0, 0, 0, 0.2);
   color: #fff;
-
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem;
+  height: 45rem;
   padding-top: 3rem;
-
-
+  position: relative;
   display: flex;
   align-self: center;
   justify-content: space-evenly;
-
+  &__logo {
+    width: 10rem;
+    position: absolute;
+    top: 23rem;
+  }
   &__logo {
     width: 18rem;
     height: 18rem;
-    &--text{
+    &--text {
       font-size: 2.8rem;
       font-weight: 600;
     }
@@ -94,12 +91,11 @@
       z-index: 4;
       color: #fff;
       align-items: center;
-      transform: translate(-10%,-40%);
-
+      transform: translate(-10%, -40%);
     }
   }
 
-  &__bottom{
+  &__bottom {
     color: #fff;
     background-color: rgb(0, 0, 0);
     height: 4rem;
@@ -108,7 +104,7 @@
     font-size: 1rem;
   }
 
-  &__column{
+  &__column {
     display: flex;
     margin-top: 3rem;
     flex-direction: column;
@@ -116,13 +112,13 @@
     justify-content: flex-start;
   }
 
-  &__title{
+  &__title {
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
   }
 
-  &__list{
+  &__list {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -131,14 +127,14 @@
   }
 }
 
-.ellener{
+.ellener {
   width: 30rem;
   font-size: 1.5rem;
   font-weight: 300;
   transform: translateY(-10rem);
 }
 
-.subscribe{
+.subscribe {
   display: flex;
   height: 6rem;
   place-items: center;
@@ -148,8 +144,8 @@
   text-align: center;
 }
 
-.btn{
-  &-1{
+.btn {
+  &-1 {
     position: absolute;
     height: 100%;
     width: 50%;
@@ -162,7 +158,7 @@
     cursor: pointer;
     display: none;
   }
-  &-2{
+  &-2 {
     position: absolute;
     right: -5%;
     top: 12.8%;
@@ -178,13 +174,13 @@
   }
 }
 
-.field-footer{
+.field-footer {
   height: 100%;
   width: 100%;
   background: orange;
 }
 
-.field-footer input{
+.field-footer input {
   height: 100%;
   width: 100%;
   border: 2px solid #fff;
@@ -193,6 +189,89 @@
   font-size: 2rem;
   outline: none;
 }
-
-
-
+.right-buttom {
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 30.45rem;
+  left: 70rem;
+  transform: rotate(-10deg);
+}
+.right-buttom-horz {
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 28.8rem;
+  left: 89.8rem;
+}
+.left-buttom {
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 30.8rem;
+  left: 38.1rem;
+  transform: rotate(10deg);
+}
+.left-buttom-horz{
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 29.12rem;
+  left: 28.27rem;
+}
+.left-middle{
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 22.2rem;
+  left: 42.2rem;
+  transform: rotate(40deg);
+}
+.left-middle-horz{
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 15.80rem;
+  left: 34.55rem;
+}
+.right-middle{
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 22.2rem;
+  right: 42.2rem;
+  transform: rotate(-40deg);
+}
+.right-middle-horz{
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 15.80rem;
+  right: 34.56rem;
+}
+.center{
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 16.5rem;
+  right: 54.2rem;
+  transform: rotate(90deg);
+}
+.center-horz{
+   width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 6.4rem;
+  right: 59rem;
+  
+}

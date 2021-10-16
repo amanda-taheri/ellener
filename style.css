@@ -170,16 +170,22 @@ body {
 
 .footer {
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5) 0%, #434343 100%), url(../img/footer5.png);
+  background-color: #202020;
+  box-shadow: 0rem -0.5rem 2rem rgba(0, 0, 0, 0.2);
   color: #fff;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem;
+  height: 45rem;
   padding-top: 3rem;
+  position: relative;
   display: flex;
   align-self: center;
   justify-content: space-evenly; }
+  .footer__logo {
+    width: 10rem;
+    position: absolute;
+    top: 23rem; }
   .footer__logo {
     width: 18rem;
     height: 18rem; }
@@ -274,6 +280,91 @@ body {
   padding: 0 1.3rem 0 1rem;
   font-size: 2rem;
   outline: none; }
+
+.right-buttom {
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 30.45rem;
+  left: 70rem;
+  transform: rotate(-10deg); }
+
+.right-buttom-horz {
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 28.8rem;
+  left: 89.8rem; }
+
+.left-buttom {
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 30.8rem;
+  left: 38.1rem;
+  transform: rotate(10deg); }
+
+.left-buttom-horz {
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 29.12rem;
+  left: 28.27rem; }
+
+.left-middle {
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 22.2rem;
+  left: 42.2rem;
+  transform: rotate(40deg); }
+
+.left-middle-horz {
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 15.80rem;
+  left: 34.55rem; }
+
+.right-middle {
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 22.2rem;
+  right: 42.2rem;
+  transform: rotate(-40deg); }
+
+.right-middle-horz {
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 15.80rem;
+  right: 34.56rem; }
+
+.center {
+  width: 20rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 16.5rem;
+  right: 54.2rem;
+  transform: rotate(90deg); }
+
+.center-horz {
+  width: 10rem;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 6.4rem;
+  right: 59rem; }
 
 @font-face {
   font-family: IRANSans;
