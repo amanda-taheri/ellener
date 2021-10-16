@@ -1,7 +1,3 @@
-@import 
-'./base' , 
-'./components',
-'./layout',
-'./typography',
-'./contact',
-'./responsive';
+@import "./base", "./components", "./layout", "./typography", "./contact",
+  "./responsive";
+@import "./section-card";

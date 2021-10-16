@@ -13,7 +13,8 @@
   border-radius: 1rem;
   border-end-end-radius: 0;
   background-position-x: center;
-  background-position-y: 40%;;
+  background-position-y: 40%;
+  background-attachment: fixed;
   &__logo {
     &--box {
       display: flex;
@@ -21,7 +22,7 @@
       width: 12rem;
       height: 12rem;
       left: 1%;
-      right: 1%;
+      left: 1%;
       color: #fff;
     }
   }

@@ -1,151 +1,213 @@
 <!DOCTYPE html>
 <html lang="fa_IR" dir="rtl">
-<head>
-	<link rel="stylesheet" href="../style.css">
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="title" content="Ellener|idustrial parts seller">
-	<meta name="language" content="FA">
-	<title>Ellener</title>
-</head>
-<body>
-	<!------------------------- header ------------------------->
-	<header class="header">
+  <head>
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Ellener|idustrial parts seller" />
+    <meta name="language" content="FA" />
+    <title>Ellener</title>
+  </head>
+  <body>
+    <!------------------------- header ------------------------->
+    <header class="header">
+      <div class="header__logo--box">
+        <img src="../img/logo.png" alt="hello" class="header__logo" />
+      </div>
+      <div class="header__title--box flex">
+        <div class="btn--box">
+          <a href="#contact" class="btn btn1 btn-animation">ثبت سفارش</a>
+          <a href="#" class="btn btn2 btn-animation">پیگیری سفارش</a>
+          <a href="#" class="btn btn3 btn-animation"> ارتباط با ما</a>
+        </div>
+        <div class="header__title">
+          <h1 class="title">Ellener</h1>
+          <p class="desc">industrial parts seller</p>
+        </div>
+      </div>
 
-		<div class="header__logo--box">
-			<img src="../img/logo.png" alt="hello" class="header__logo" >
-		</div>
-		<div class="header__title--box flex">
-			<div class="btn--box">
-				<a href="#" class="btn btn1  btn-animation">ثبت سفارش</a>
-				<a href="#" class="btn btn2 btn-animation">پیگیری سفارش</a>
-				<a href="#" class="btn btn3  btn-animation"> ارتباط با ما</a>
-			</div>
-			<div class="header__title ">
-				<h1 class="title" >Ellener</h1>
-				<p class="desc">industrial parts seller</p>
-			</div>
-		</div>
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </header>
+    <!------------------------- /header ------------------------->
+    <!--------------------- section-card ----------------------->
+    <section class="section__shop" id="shop">
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture-1">&nbsp;</div>
+              <h4 class="card__heading">
+                <span class="__heading--span card__heading--span-1">
+                  esme brand
+                </span>
+              </h4>
+              <div class="card__detail">
+                <ul>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                </ul>
+              </div>
+            </div>
+            <!--front-->
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__p-1">nike</p>
+                  <p class="card__p-2">$111</p>
+                </div>
+                <a href="#pupop" class="btn btn-white" id="btn-card"
+                  >see picture!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--col-->
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture-2">&nbsp;</div>
+              <h4 class="card__heading">
+                <span class="__heading--span card__heading--span-2">
+                  esme brand
+                </span>
+              </h4>
+              <div class="card__detail">
+                <ul>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                </ul>
+              </div>
+            </div>
+            <!--front-->
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__p-1">addidas</p>
+                  <p class="card__p-2">$222</p>
+                </div>
+                <a href="#pupop" class="btn btn-white" id="btn-card"
+                  >see picture!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--col-->
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture-3">&nbsp;</div>
+              <h4 class="card__heading">
+                <span class="__heading--span card__heading--span-3">
+                  esme brand
+                </span>
+              </h4>
+              <div class="card__detail">
+                <ul>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                  <li>specifications</li>
+                </ul>
+              </div>
+            </div>
+            <!--front-->
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__p-1">puma</p>
+                  <p class="card__p-2">$333</p>
+                </div>
+                <a href="#pupop" class="btn btn-white" id="btn-card"
+                  >see picture!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--row-->
+      <div class="u-center">
+        <a href="#" class="btn u-center btn-c1"> ! see more brand </a>
+      </div>
+    </section>
+    <!--------------------- section-card ----------------------->
 
-			
-		<!--Waves Container-->
-		<div>
-			<svg class="waves"  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-				<defs>
-					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-				</defs>
-				<g class="parallax">
-					<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-					<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-					<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-					<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-				</g>
-			</svg>
-		</div>
-		<!--Waves end-->
-	</header>
-	<!------------------------- /header ------------------------->
+    <!------------------------- footer ------------------------->
+    <footer class="footer">
+      <div class="subscribe">
+        <label for="" class="btn-1">عضویت در خبرنامه</label>
+        <div class="field-footer">
+          <input type="email" placeholder="آدرس ایمیل" />
+          <label class="btn-2">عضویت در خبرنامه</label>
+        </div>
+      </div>
 
-	<section class="contact">
-		<div class="contact__title">
-		    <h2 class="contact__title--h">ثبت سفارش قطعه</h2>
-		</div>
-		<div class="contact__title">
-		    <p class="contact__title--p">Ellener , industrial parts seller</p>
-		</div>
-		<div class="contact__form--container">
-		    <form action="#" class="contact__form">
-			<div class="field--double">
-			    <div class="field">
-				<input type="text" name="fullName" class="form__input input-check" id="fUllName" placeholder=" ">
-				<span class="form__tooltip">نام و نام خانوادگی را وارد کنید</span>
-				<label class="form__label" for="fullName">نام و نام خانوادگی</label>
-			    </div>
-			    <div class="field">
-				<input type="text" name="companyName" class="form__input input-check" id="companyName" placeholder=" ">
-				<span class="form__tooltip">نام شرکت را وارد کنید</span>
-				<label class="form__label" for="companyName">نام شرکت</label>
-	
-			    </div>
-			</div>
-			<div class="field--double">
-			    <div class="field">
-				<input type="email" name="email" class="form__input input-check" id="email" placeholder=" " pattern='\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'>
-				<span class="form__tooltip">ایمیل را وارد کنید</span>
-				<label class="form__label" for="email">ایمیل</label>
-			    </div>
-	
-			    <div class="field">
-				<input type="tel" name="phone" class="form__input input-check" id="phone" maxlength="11" placeholder=" " pattern='09(1[0-9]|3[1-9]|2[1-9]|9[0-9])-?[0-9]{3}-?[0-9]{4}'>
-				<span class="form__tooltip">تلفن همراه را وارد کنید</span>
-				<label class="form__label" for="phone">تلفن همراه</label>
-			    </div>
-			</div>
-	
-	
-			<div class="field">
-			    <textarea name="pDescription" class="form__input input-check" id="pDescription" rows="4" placeholder=" "></textarea>
-			    <span class="form__tooltip">توضیحات خود را در خصوص قطعه ی مورد نظر وارد کنید</span>
-			    <label class="form__label" for="pDescription">توضیحات قطعه مورد نظر</label>
-	
-			</div>
-			<div class="form__attach">
-			    <button class="attach__tigger">
-						<svg class="attach__tigger--icon">
-							<use xlink:href="./img/symbol-defs.svg#icon-attachment"></use>
-						</svg>
-						<div class="attach__tigger--text">افزودن فایل</div>
-					</button>
-	
-			    <input type="file" multiple class="attach__file file" />
-			</div>
-			<div class="attach__description"> تا پنج فایل قابل می توانید بارگزاری کنید.حجم هر فایل باید کمتر از ۵ مگابایت باشد. </div>
-			<div class="form__submit">
-			    <button type="submit" class="form--submit">ثبت</button>
-	
-			    <div class="form__cookies">
-				<p class="form__cookie--text"> با ثبت این فرم،رضایت می دهم تا النر داده های شخصی من را طبق <span class="contact__span"> سیاست حفظ حریم خصوصی النر</span> پردازش کند.</p>
-			    </div>
-			</div>
-	
-		    </form>
-		</div>
-	    </section>
-
-	<!------------------------- footer ------------------------->
-	<footer class="footer">
-	
-		<div class="subscribe">
-			<label for="" class="btn-1">عضویت در خبرنامه</label>
-			<div class="field-footer">
-				<input type="email" placeholder="آدرس ایمیل" >
-				<label class="btn-2">عضویت در خبرنامه</label>
-			</div>
-		</div>
-
-		<div class="footer__column">
-			<h1 class="footer__title"> راه های ارتباطی</h1>
-			<ul class="footer__list">
-				<li>متن آزمایشی</li>
-				<li>متن آزمایشی</li>
-				<li>متن آزمایشی</li>
-			</ul>
-		</div>
-		<div class="footer__column">
-			<h1 class="footer__title">سرویس ها</h1>
-			<ul class="footer__list">
-				<li>متن آزمایشی</li>
-				<li>متن آزمایشی</li>
-				<li>متن آزمایشی</li>
-			</ul>
-		</div>
-		<div class="footer__column footer__column--1">
-			<div class="footer__logo--box">
-				<div class="footer__logo--text">ELLENER</div>
-				<img src="../img/logo.png" alt="hello" class="footer__logo" >
-			</div>
-			<!-- <ul class="social__icon">
+      <div class="footer__column">
+        <h1 class="footer__title">راه های ارتباطی</h1>
+        <ul class="footer__list">
+          <li>متن آزمایشی</li>
+          <li>متن آزمایشی</li>
+          <li>متن آزمایشی</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h1 class="footer__title">سرویس ها</h1>
+        <ul class="footer__list">
+          <li>متن آزمایشی</li>
+          <li>متن آزمایشی</li>
+          <li>متن آزمایشی</li>
+        </ul>
+      </div>
+      <div class="footer__column footer__column--1">
+        <div class="footer__logo--box">
+          <div class="footer__logo--text">ELLENER</div>
+          <img src="../img/logo.png" alt="hello" class="footer__logo" />
+        </div>
+        <!-- <ul class="social__icon">
 				<li class="social__icon--tem"><a class="social__icon--link" href="#">
 				    <ion-icon name="logo-facebook"></ion-icon>
 				  </a></li>
@@ -158,16 +220,21 @@
 				<li class="social__icon--item"><a class="social__icon--link" href="#">
 				    <ion-icon name="logo-instagram"></ion-icon>
 				</a></li>
-			</ul> -->
-			
-			<div class="ellener"> متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی v متن آزمایشی متن آزمایشی</div>
-		</div>
-	</footer>
-	<div class="footer__bottom">
-		<div class="copyright">copyright &copy; 2021 Ellener - All Right Reserved</div>
-	</div>
-	<!------------------------- /footer ------------------------->
+			</ul>
+			 -->
+        <div class="ellener">
+          متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن
+          آزمایشی v متن آزمایشی متن آزمایشی
+        </div>
+      </div>
+    </footer>
+    <div class="footer__bottom">
+      <div class="copyright">
+        copyright &copy; 2021 Ellener - All Right Reserved
+      </div>
+    </div>
+    <!------------------------- /footer ------------------------->
 
-	<script src="../main.js"></script>
-</body>
+    <script src="../main.js"></script>
+  </body>
 </html>
