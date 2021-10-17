@@ -57,15 +57,7 @@ $color-blue-light-1: rgb(59, 42, 211);
     }
     &--back {
       transform: rotateY(180deg);
-      &-1 {
-        background-image: linear-gradient(to right bottom, #22223b, #34a4e6);
-      }
-      &-2 {
-        background-image: linear-gradient(to right bottom, #212529, #343a40);
-      }
-      &-3 {
-        background-image: linear-gradient(to right bottom, #184e77, #1e6091);
-      }
+      
     }
   }
 
@@ -93,28 +85,24 @@ $color-blue-light-1: rgb(59, 42, 211);
       0 0
     );
     &-1 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-card-5,
-          $color-card-6
-        ),
-        url(../img/elin.jpg);
+      background-image: url(../img/elin.jpg);
     }
     &-2 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-card-3,
-          $color-card-4
-        ),
-        url(../img/refre.jpg);
+      background-image: url(../img/refre.jpg);
     }
     &-3 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-card-1,
-          $color-card-2
-        ),
-        url(../img/siemens1.jpg);
+      background-image: url(../img/siemens1.jpg);
+    }
+    &-11 {
+      background-image: url(../img/Toni-Technik.jpg);
+      background-size: cover;
+      background-position-y: 20rem;
+    }
+    &-22 {
+      background-image: url(../img/skf.jpg);
+    }
+    &-33 {
+      background-image: url(../img/abb.jpg);
     }
   }
   &__heading {
@@ -134,31 +122,55 @@ $color-blue-light-1: rgb(59, 42, 211);
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          rgba(#2b0b75, 0.85),
-          rgba(#1a2b38, 0.85)
+          rgba(#fff, 1),
+          rgba(#fff, 1)
         );
         word-spacing: 1rem;
-        padding: 0.4rem 1.5rem;
-        -webkit-box-decoration-break: clone; //new property اعمال پدینگ موثع شکستن کلمات
+        padding: 0.4rem 1rem;
+       width: 15rem;
+      }
+      &-11 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(#ffffff, 1),
+          rgba(#ffffff, 1)
+        );
+        word-spacing: 1rem;
+        padding: 0rem 1rem;
+       width: 15rem;
       }
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          rgba(#08304e, 0.85),
-          rgba(#052136, 0.85)
+          rgba(#fff, 1),
+          rgba(#fff, 1)
         );
-        padding: 0.4rem 1.5rem;
-        -webkit-box-decoration-break: clone;
+        word-spacing: 1rem;
+        padding: 1rem 1rem;
+       width: 15rem;
       }
-      &-3 {
+      &-22 {
         background-image: linear-gradient(
           to right bottom,
-          rgba(#22223b, 0.85),
-          rgba(#4a4e69, 0.85)
+          rgba(#fff, 1),
+          rgba(#fff, 1)
         );
-        padding: 0.4rem 1.5rem;
-        -webkit-box-decoration-break: clone;
+        word-spacing: 1rem;
+        padding:0;
+       width: 12rem;
       }
+     
+      &-33 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(#fff, 1),
+          rgba(#fff, 1)
+        );
+        word-spacing: 1rem;
+        padding:1rem;
+       width: 10rem;
+      }
+      
     }
   }
   &__detail {
