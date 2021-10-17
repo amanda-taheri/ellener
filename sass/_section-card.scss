@@ -91,7 +91,7 @@ $color-blue-light-1: rgb(59, 42, 211);
     background-size: cover;
     
     height: 23rem;
-    background-blend-mode: hue; //new property ادغام رنگ با تصویر
+    background-blend-mode: screen; //new property ادغام رنگ با تصویر
     // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     clip-path: polygon(50% 0%, 100% 0, 100% 43%, 94% 78%, 68% 94%, 34% 97%, 0 100%, 0% 43%, 0 0);
     &-1 {
@@ -100,7 +100,7 @@ $color-blue-light-1: rgb(59, 42, 211);
           $color-card-5,
           $color-card-6
         ),
-        url(../img/elin.png);
+        url(../img/elin.jpg);
     }
     &-2 {
       background-image: linear-gradient(
@@ -108,7 +108,7 @@ $color-blue-light-1: rgb(59, 42, 211);
           $color-card-3,
           $color-card-4
         ),
-        url(../img/Refratechnik.png);
+        url(../img/refra.jpg);
     }
     &-3 {
       background-image: linear-gradient(
@@ -116,7 +116,7 @@ $color-blue-light-1: rgb(59, 42, 211);
           $color-card-1,
           $color-card-2
         ),
-        url(../img/siemens.jpg);
+        url(../img/siemens1.jpg);
     }
   }
   &__heading {
@@ -125,7 +125,7 @@ $color-blue-light-1: rgb(59, 42, 211);
     color: $color-white;
     text-transform: uppercase;
     position: absolute;
-    top: 12rem;
+    top: 14rem;
     left: 2rem;
     text-align: left;
     width: 55%;
@@ -136,8 +136,8 @@ $color-blue-light-1: rgb(59, 42, 211);
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          rgba($color-card-5, 0.85),
-          rgba($color-card-6, 0.85)
+          rgba(#2b0b75, 0.85),
+          rgba(#1a2b38, 0.85)
         );
         word-spacing: 1rem;
         padding: 0.4rem 1.5rem;
@@ -146,8 +146,8 @@ $color-blue-light-1: rgb(59, 42, 211);
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          rgba($color-card-3, 0.85),
-          rgba($color-card-4, 0.85)
+          rgba(#08304e, 0.85),
+          rgba(#052136, 0.85)
         );
         padding: 0.4rem 1.5rem;
         -webkit-box-decoration-break: clone;
